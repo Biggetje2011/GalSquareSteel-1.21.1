@@ -1,5 +1,6 @@
 package net.biggetje.squaresteel;
 
+import net.biggetje.squaresteel.block.ModBlocks;
 import net.biggetje.squaresteel.item.ModItems;
 import org.slf4j.Logger;
 
@@ -56,6 +57,7 @@ public class SquareSteel {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -72,6 +74,10 @@ public class SquareSteel {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.STEEL_INGOT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.GALVANIZED_BLOCK);
         }
     }
 
