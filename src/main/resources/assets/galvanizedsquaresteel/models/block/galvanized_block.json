@@ -1,8 +1,11 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "top":  "galvanizedsquaresteel:block/galvanized_block_side1",
-    "side": "galvanizedsquaresteel:block/galvanized_block_side1",
-    "front":"galvanizedsquaresteel:block/galvanized_block_side2"
+    "up":    "modid:block/top",
+    "down":  "modid:block/bottom",
+    "north": "modid:block/back",
+    "south": "modid:block/front",
+    "west":  "modid:block/side",
+    "east":  "modid:block/side"
   }
 }
