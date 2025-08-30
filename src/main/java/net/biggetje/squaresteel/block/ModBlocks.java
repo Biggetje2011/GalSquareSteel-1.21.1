@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(SquareSteel.MOD_ID);
 
-    public static final DeferredBlock<> GALVANIZED_BLOCK = registerBlock(
+    public static final DeferredBlock<Block> GALVANIZED_BLOCK = registerBlock(
             "galvanized_block.png",
             () -> new net.minecraft.world.level.block.Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
