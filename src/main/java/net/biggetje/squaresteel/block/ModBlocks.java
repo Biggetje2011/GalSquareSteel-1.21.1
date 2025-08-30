@@ -22,7 +22,7 @@ public class ModBlocks {
             () -> new GalvanizedBlock(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.AMETHYST)));
+                    .sound(SoundType.METAL)));
 
 
 
