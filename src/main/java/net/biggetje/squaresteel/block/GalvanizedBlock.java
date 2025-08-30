@@ -6,11 +6,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 
 
 public class GalvanizedBlock extends Block {
-    public static final DirectionProperty FACING = DirectionProperty.create("facing", Direction.Plane.HORIZONTAL);
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
+
 
     public GalvanizedBlock(BlockBehaviour.Properties props) {
         super(props);
@@ -24,6 +26,7 @@ public class GalvanizedBlock extends Block {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        Direction dir = context.getNearestLookingDirection().getOpposite(); // kijkt naar speler
+        return this.defaultBlockState().setValue(FACING, dir);
     }
 }
