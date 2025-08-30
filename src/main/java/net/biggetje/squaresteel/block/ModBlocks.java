@@ -19,8 +19,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> GALVANIZED_BLOCK = registerBlock(
             "galvanized_block",
-            () -> new net.minecraft.world.level.block.Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops()
+            () -> new GalvanizedBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)));
 
 
