@@ -18,7 +18,7 @@ public class ModBlocks {
             DeferredRegister.createBlocks(SquareSteel.MOD_ID);
 
     public static final DeferredBlock<Block> GALVANIZED_BLOCK = registerBlock(
-            "galvanized_block.png",
+            "galvanized_block",
             () -> new net.minecraft.world.level.block.Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST)));
