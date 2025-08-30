@@ -1,10 +1,10 @@
 package net.biggetje.squaresteel.block;
 
-import com.jcraft.jorbis.Block;
 import net.biggetje.squaresteel.SquareSteel;
 import net.biggetje.squaresteel.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(SquareSteel.MOD_ID);
 
-    public static final DeferredBlock<net.minecraft.world.level.block.Block> GALVANIZED_BLOCK = registerBlock(
+    public static final DeferredBlock<> GALVANIZED_BLOCK = registerBlock(
             "galvanized_block.png",
             () -> new net.minecraft.world.level.block.Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
@@ -32,7 +32,7 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
+    private static <T extends net.minecraft.world.level.block.Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
