@@ -1,10 +1,10 @@
 {
   "variants": {
-    "facing=north": { "model": "modid:block/galvanized_block", "y": 0 },
-    "facing=south": { "model": "modid:block/galvanized_block", "y": 180 },
-    "facing=west":  { "model": "modid:block/galvanized_block", "y": 270 },
-    "facing=east":  { "model": "modid:block/galvanized_block", "y": 90 },
-    "facing=up":    { "model": "modid:block/galvanized_block", "x": 270 },
-    "facing=down":  { "model": "modid:block/galvanized_block", "x": 90 }
+    "facing=north": { "model": "galvanizedsquaresteel:block/galvanized_block", "y": 0 },
+    "facing=south": { "model": "galvanizedsquaresteel:block/galvanized_block", "y": 180 },
+    "facing=west":  { "model": "galvanizedsquaresteel:block/galvanized_block", "y": 270 },
+    "facing=east":  { "model": "galvanizedsquaresteel:block/galvanized_block", "y": 90 },
+    "facing=up":    { "model": "galvanizedsquaresteel:block/galvanized_block", "x": 270 },
+    "facing=down":  { "model": "galvanizedsquaresteel:block/galvanized_block", "x": 90 }
   }
 }
