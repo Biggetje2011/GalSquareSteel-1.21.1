@@ -2,6 +2,7 @@
   "parent": "minecraft:block/cube",
   "textures": {
     "side": "galvanizedsquaresteel:block/galvanized_block_side1",
-    "back":"galvanizedsquaresteel:block/galvanized_block_side2",
+    "back": "galvanizedsquaresteel:block/galvanized_block_side2",
     "front": "galvanizedsquaresteel:block/galvanized_block_side2"
+  }
 }
