@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "up":    "modid:block/top",
-    "down":  "modid:block/bottom",
-    "north": "modid:block/back",
-    "south": "modid:block/front",
-    "west":  "modid:block/side",
-    "east":  "modid:block/side"
+    "up":    "galvanizedsquaresteel:block/galvanized_block_side1",
+    "down":  "galvanizedsquaresteel:block/galvanized_block_side1",
+    "north": "galvanizedsquaresteel:block/galvanized_block_side2",
+    "south": "galvanizedsquaresteel:block/galvanized_block_side2",
+    "west":  "galvanizedsquaresteel:block/galvanized_block_side1",
+    "east":  "galvanizedsquaresteel:block/galvanized_block_side1"
   }
 }
