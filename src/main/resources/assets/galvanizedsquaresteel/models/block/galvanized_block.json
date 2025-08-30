@@ -6,6 +6,7 @@
     "north": "galvanizedsquaresteel:block/galvanized_block_side2",
     "south": "galvanizedsquaresteel:block/galvanized_block_side2",
     "west":  "galvanizedsquaresteel:block/galvanized_block_side1",
-    "east":  "galvanizedsquaresteel:block/galvanized_block_side1"
+    "east":  "galvanizedsquaresteel:block/galvanized_block_side1",
+    "particle": "galvanizedsquaresteel:block/galvanized_block_side1"
   }
 }
