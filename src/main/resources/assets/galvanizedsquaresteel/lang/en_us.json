@@ -1,4 +1,7 @@
 {
-  "item.galvanizedsquaresteel.steel_ingot": "Steel ingot",
-  "block.galvanizedsquaresteel.galvanized_block": "Block of galvanized square steel"
+  "item.galvanizedsquaresteel.steel_ingot": "Steel Ingot",
+
+  "block.galvanizedsquaresteel.galvanized_block": "Block of Galvanized Square Steel",
+
+  "creativetab.galvanizedsquaresteel.stuff": "Galvanized Square Steel"
 }
