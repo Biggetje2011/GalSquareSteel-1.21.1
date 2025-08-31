@@ -20,10 +20,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GALVANIZED_BLOCK = registerBlock(
             "galvanized_block",
             () -> new GalvanizedBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
+                    .strength(5f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock(
+            "steel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
 
 
 

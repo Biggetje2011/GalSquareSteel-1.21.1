@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModBlocks.GALVANIZED_BLOCK);
+                        output.accept(ModBlocks.STEEL_BLOCK);
                     })
                     .build());
 
