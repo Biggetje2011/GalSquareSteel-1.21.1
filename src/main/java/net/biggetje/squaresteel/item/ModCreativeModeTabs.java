@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> GALVANIZED_TAB = CREATIVE_MODE_TAB.register("galvanized_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.STEEL_INGOT.get()))
+                    .icon(() -> new ItemStack(ModBlocks.GALVANIZED_BLOCK.get()))
                     .title(Component.translatable("creativetab.galvanizedsquaresteel.stuff"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.STEEL_INGOT);
