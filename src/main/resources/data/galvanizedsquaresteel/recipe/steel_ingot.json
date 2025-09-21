@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "galvanizedsquaresteel:steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "galvanizedsquaresteel:steel_ingot"
+  }
+}
