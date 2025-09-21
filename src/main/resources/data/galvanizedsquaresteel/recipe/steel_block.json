@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "I": {
-      "block": "minecraft:iron_block"
+      "item": "minecraft:iron_block"
     },
     "C": {
       "item": "minecraft:coal"
@@ -14,7 +14,7 @@
     "CIC",
     "CCC"
   ],
-  "result:": {
+  "result": {
     "count": 1,
     "id": "galvanizedsquaresteel:steel_block"
   }
