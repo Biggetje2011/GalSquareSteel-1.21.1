@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "block": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CIC",
+    "CCC"
+  ],
+  "result:": {
+    "count": 1,
+    "id": "galvanizedsquaresteel:steel_block"
+  }
+}
