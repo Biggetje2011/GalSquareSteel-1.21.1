@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "galvanizedsquaresteel:steel_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "galvanizedsquaresteel:galvanized_block"
+  }
+}
