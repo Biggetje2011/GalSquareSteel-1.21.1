@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlocks.GALVANIZED_BLOCK.get()))
                     .title(Component.translatable("creativetab.galvanizedsquaresteel.stuff"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.CUTTER);
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModBlocks.GALVANIZED_BLOCK);
                         output.accept(ModBlocks.STEEL_BLOCK);
