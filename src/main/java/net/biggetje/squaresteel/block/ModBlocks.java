@@ -1,7 +1,7 @@
 package net.biggetje.squaresteel.block;
 
-import net.biggetje.squaresteel.SquareSteel;
 import net.biggetje.squaresteel.block.custom.Reinforcer;
+import net.biggetje.squaresteel.SquareSteel;
 import net.biggetje.squaresteel.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -37,7 +37,8 @@ public class ModBlocks {
             "reinforcer",
             () -> new Reinforcer(BlockBehaviour.Properties.of()
                     .strength(4f)
-                    .requiresCorrectToolForDrops()));
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

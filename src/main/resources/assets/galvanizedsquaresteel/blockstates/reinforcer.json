@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "mymod:block/my_cube" },
+    "facing=south": { "model": "mymod:block/my_cube", "y": 180 },
+    "facing=west":  { "model": "mymod:block/my_cube", "y": 270 },
+    "facing=east":  { "model": "mymod:block/my_cube", "y": 90 }
+  }
+}
