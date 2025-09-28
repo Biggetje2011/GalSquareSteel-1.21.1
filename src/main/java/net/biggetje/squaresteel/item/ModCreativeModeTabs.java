@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.galvanizedsquaresteel.stuff"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CUTTER);
+                        output.accept(ModBlocks.REINFORCER);
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModBlocks.GALVANIZED_BLOCK);
                         output.accept(ModBlocks.STEEL_BLOCK);

@@ -1,6 +1,7 @@
 package net.biggetje.squaresteel.block;
 
 import net.biggetje.squaresteel.SquareSteel;
+import net.biggetje.squaresteel.block.custom.Reinforcer;
 import net.biggetje.squaresteel.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -11,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import javax.swing.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -31,6 +33,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> REINFORCER = registerBlock(
+            "reinforcer",
+            () -> new Reinforcer(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
