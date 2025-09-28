@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "galvanizedsquaresteel:reinforcer" },
-    "facing=south": { "model": "galvanizedsquaresteel:reinforcer" },
-    "facing=west":  { "model": "galvanizedsquaresteel:reinforcer" },
-    "facing=east":  { "model": "galvanizedsquaresteel:reinforcer" }
+    "facing=north": { "model": "galvanizedsquaresteel:block/reinforcer" },
+    "facing=south": { "model": "galvanizedsquaresteel:block/reinforcer", "y": 180 },
+    "facing=west":  { "model": "galvanizedsquaresteel:block/reinforcer", "y": 270 },
+    "facing=east":  { "model": "galvanizedsquaresteel:block/reinforcer", "y": 90 }
   }
 }

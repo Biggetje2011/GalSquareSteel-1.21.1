@@ -1,4 +1,4 @@
-package net.biggetje.squaresteel.block;
+package net.biggetje.galvanizedsquaresteel.block;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;

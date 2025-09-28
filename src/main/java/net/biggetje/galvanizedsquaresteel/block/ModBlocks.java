@@ -1,8 +1,8 @@
-package net.biggetje.squaresteel.block;
+package net.biggetje.galvanizedsquaresteel.block;
 
-import net.biggetje.squaresteel.block.custom.Reinforcer;
-import net.biggetje.squaresteel.SquareSteel;
-import net.biggetje.squaresteel.item.ModItems;
+import net.biggetje.galvanizedsquaresteel.block.custom.Reinforcer;
+import net.biggetje.galvanizedsquaresteel.SquareSteel;
+import net.biggetje.galvanizedsquaresteel.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -12,7 +12,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import javax.swing.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {

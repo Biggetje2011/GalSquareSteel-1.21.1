@@ -1,6 +1,6 @@
-package net.biggetje.squaresteel.block.custom;
+package net.biggetje.galvanizedsquaresteel.block.custom;
 
-import net.biggetje.squaresteel.block.ModBlocks;
+import net.biggetje.galvanizedsquaresteel.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionResult;

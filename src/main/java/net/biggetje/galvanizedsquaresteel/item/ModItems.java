@@ -1,7 +1,7 @@
-package net.biggetje.squaresteel.item;
+package net.biggetje.galvanizedsquaresteel.item;
 
-import net.biggetje.squaresteel.SquareSteel;
-import net.biggetje.squaresteel.item.custom.CutterItem;
+import net.biggetje.galvanizedsquaresteel.SquareSteel;
+import net.biggetje.galvanizedsquaresteel.item.custom.CutterItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;

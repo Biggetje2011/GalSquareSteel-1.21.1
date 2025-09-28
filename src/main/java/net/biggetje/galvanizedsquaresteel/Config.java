@@ -1,4 +1,4 @@
-package net.biggetje.squaresteel;
+package net.biggetje.galvanizedsquaresteel;
 
 import java.util.List;
 

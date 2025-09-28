@@ -1,8 +1,7 @@
-package net.biggetje.squaresteel.item.custom;
+package net.biggetje.galvanizedsquaresteel.item.custom;
 
-import net.biggetje.squaresteel.block.ModBlocks;
+import net.biggetje.galvanizedsquaresteel.block.ModBlocks;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -11,11 +10,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.SlabType;
-import net.neoforged.fml.common.Mod;
 
 import java.util.Map;
 
