@@ -1,6 +1,7 @@
 package net.biggetje.galvanizedsquaresteel.block.custom;
 
 import net.biggetje.galvanizedsquaresteel.block.ModBlocks;
+import net.biggetje.galvanizedsquaresteel.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionResult;
@@ -8,6 +9,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -57,7 +59,12 @@ public class Reinforcer extends Block {
         if (entity instanceof ItemEntity itemEntity) {
             if (itemEntity.getItem().getItem() == Blocks.IRON_BLOCK.asItem()) {
                 itemEntity.setItem(new ItemStack(ModBlocks.STEEL_BLOCK.get(), itemEntity.getItem().getCount()));
-                level.addParticle(ParticleTypes.ASH, 0, 0, 0, 0,0, 0);
+                level.addParticle(ParticleTypes.SMOKE , pos.getX()+0.5, pos.getY()+1.5 , pos.getZ()+0.5 , 0.0F, 0.0F, 0.0F);
+                level.playSound(null, pos, SoundEvents.LAVA_EXTINGUISH, SoundSource.BLOCKS, 0.8f, 1.0f);
+            }
+            if (itemEntity.getItem().getItem() == Items.IRON_INGOT) {
+                itemEntity.setItem(new ItemStack(ModItems.STEEL_INGOT.get(), itemEntity.getItem().getCount()));
+
             }
         }
         super.stepOn(level, pos, state, entity);
