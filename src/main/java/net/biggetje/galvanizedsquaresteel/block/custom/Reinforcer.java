@@ -65,6 +65,7 @@ public class Reinforcer extends Block {
             if (itemEntity.getItem().getItem() == Items.IRON_INGOT) {
                 itemEntity.setItem(new ItemStack(ModItems.STEEL_INGOT.get(), itemEntity.getItem().getCount()));
                 level.addParticle(ParticleTypes.SMOKE , pos.getX()+0.5, pos.getY()+1.5 , pos.getZ()+0.5 , 0.0F, 0.0F, 0.0F);
+                level.playSound(null, pos, SoundEvents.LAVA_EXTINGUISH, SoundSource.BLOCKS, 0.8f, 1.0f);
             }
         }
         super.stepOn(level, pos, state, entity);
