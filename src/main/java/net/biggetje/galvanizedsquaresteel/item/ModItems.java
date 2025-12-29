@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.biggetje.galvanizedsquaresteel.item.ModFoodProperties
+import net.biggetje.galvanizedsquaresteel.item.ModFoodProperties;
 
 import javax.swing.*;
 
@@ -20,12 +20,12 @@ public class ModItems {
             () -> new CutterItem(new Item.Properties()
                     .durability(128)));
 
+    public static final DeferredItem<Item> EMPTY_LUNCHBOX = ITEMS.register("empty_lunchbox",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> LUNCHBOX = ITEMS.register("lunchbox",
             () -> new Item(new Item.Properties()
                     .food(ModFoodProperties.LUNCHBOX)));
-
-    public static final DeferredItem<Item> EMPTY_LUNCHBOX = ITEMS.register("empty_lunchbox",
-            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
