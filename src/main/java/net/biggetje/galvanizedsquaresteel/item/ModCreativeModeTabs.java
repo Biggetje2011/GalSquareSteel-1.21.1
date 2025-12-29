@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModBlocks.GALVANIZED_BLOCK);
                         output.accept(ModBlocks.STEEL_BLOCK);
+                        output.accept(ModItems.EMPTY_LUNCHBOX);
+                        output.accept(ModItems.LUNCHBOX);
                     })
                     .build());
 
